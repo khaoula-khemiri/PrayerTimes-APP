@@ -6,6 +6,9 @@ ISLAMIC PRAYER TIMES:
 
 -contains an Ultimate Collection of Hadith of Prophet Muhammad (ﷺ) from Most Accepted and Authentic Hadith books( in different languages)
 
+Please don't hesitate to open an issue or pull request. You can also send me a message on [Twitter](https://twitter.com/KhaoulaKhemiri).
+
+
 ### prayer times:
 
 ![image](https://user-images.githubusercontent.com/99682033/161259194-9dfa06c6-58dc-4d85-b546-7c0d1b7ff039.png)
