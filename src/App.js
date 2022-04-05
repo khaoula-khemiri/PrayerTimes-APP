@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
+import useLocalStorage from './useLocalStorage';
 import mosque from './image/img3.png';
 
 
 
 
 function App() {
-  const [query, setQuery] = useState('sousse');
+  
+  const [query, setQuery] = useLocalStorage('query', 'sousse');
   const [date, setDate] = useState();
   const [datehijri, setDatehijri] = useState();
   const [fajr, setFajr] = useState();
@@ -18,10 +20,17 @@ function App() {
   const [hadith, setHadith] = useState('عن أبي هريرة -رضي الله عنه- قال: قال رسول الله -صلى الله عليه وسلم-: «لا تجعلوا بيوتكم قبورا، ولا تجعلوا قبري عيدا، وصلوا عليّ فإن صلاتكم تبلغني حيث كنتم»');
   const [lang,setLang]= useState('ar');
 
+
+
+
+
+  useEffect(() => { 
+    search();
+  }, []);
+
   
 
   const search = evt => {
-    
       fetch(`https://api.pray.zone/v2/times/today.json?city=${query}`)
       .then(res => res.json())
       .then(result => {console.log(result.results)
@@ -71,6 +80,7 @@ function App() {
          <div >
            <h1 className="date">{date}</h1>
            <h1 className="date">{datehijri}</h1>
+           <h1 className="date">{query}</h1>
          </div>
        </div>
      </div>
@@ -79,10 +89,11 @@ function App() {
        <input 
             type="text"
             className="search-bar"
-            placeholder="Name of city..."
+            placeholder="Name of the city"
             onChange={e => setQuery(e.target.value)}
           />
        <button className="button1" onClick={search}>Search</button>
+       
      </div>
 
      <div className="prayer">
@@ -129,3 +140,4 @@ function App() {
 }
 
 export default App;
+ //npm install react-select-country-list --save
