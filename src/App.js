@@ -31,7 +31,7 @@ function App() {
   
 
   const search = evt => {
-      fetch(`https://api.pray.zone/v2/times/today.json?city=${query}`)
+      fetch(`https://api.pray.zone/v2/times/today.json?city=${query}&school=2`)
       .then(res => res.json())
       .then(result => {console.log(result.results)
         const y=result.results.datetime[0];
@@ -141,3 +141,5 @@ function App() {
 
 export default App;
  //npm install react-select-country-list --save
+
+ 
