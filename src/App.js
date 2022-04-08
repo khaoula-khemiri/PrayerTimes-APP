@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
 import useLocalStorage from './useLocalStorage';
 import mosque from './image/img3.png';
+import Select from 'react-select';
+import  { Component } from 'react'
 
 
 
@@ -19,7 +21,12 @@ function App() {
   const [isha, setIsha] = useState();
   const [hadith, setHadith] = useState('عن أبي هريرة -رضي الله عنه- قال: قال رسول الله -صلى الله عليه وسلم-: «لا تجعلوا بيوتكم قبورا، ولا تجعلوا قبري عيدا، وصلوا عليّ فإن صلاتكم تبلغني حيث كنتم»');
   const [lang,setLang]= useState('ar');
-
+  const options = [
+    { value: 'sousse', label: 'sousse' },
+    { value: 'london', label: 'london' },
+    { value: 'berlin', label: 'berlin' }
+  ]
+  
 
 
 
@@ -93,6 +100,7 @@ function App() {
             onChange={e => setQuery(e.target.value)}
           />
        <button className="button1" onClick={search}>Search</button>
+       <Select options={options} />
        
      </div>
 
