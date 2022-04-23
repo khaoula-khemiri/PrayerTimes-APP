@@ -4,7 +4,7 @@
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   height:  100%;
-  width: 500px;
+  max-width: 400px;
   margin: auto;
   margin-top: 50px;
   padding:   20px;
@@ -22,9 +22,12 @@ margin: 10px;
 .title{
   display: flex;
  flex-direction: column;
-  
-  margin-left: 100px;
- 
+ align-items: flex-start;
+  width: 50%;
+}
+
+.image{
+  width:50%;
 }
 
 
@@ -85,20 +88,9 @@ opacity: 70%;
   
 }
  .time1{
-   padding-left: 160px;
+  width: 30%;
+  padding: 20px;
  }
-
- .time2{
-  padding-left: 140px;
-}
-
-.time3{
-  padding-left: 155px;
-}
-
-.time4{
-  padding-left: 130px;
-}
 
 
 

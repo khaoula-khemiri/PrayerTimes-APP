@@ -21,6 +21,7 @@ function App() {
   const [isha, setIsha] = useState();
   const [hadith, setHadith] = useState('عن أبي هريرة -رضي الله عنه- قال: قال رسول الله -صلى الله عليه وسلم-: «لا تجعلوا بيوتكم قبورا، ولا تجعلوا قبري عيدا، وصلوا عليّ فإن صلاتكم تبلغني حيث كنتم»');
   const [lang,setLang]= useState('ar');
+  const [city,setcity]= useState();
   const options = [
     { value: 'sousse', label: 'sousse' },
     { value: 'london', label: 'london' },
@@ -50,6 +51,7 @@ function App() {
         setAsr(y.times.Asr)
         setMaghrib(y.times.Maghrib)
         setIsha(y.times.Isha)
+        setcity(query)
         
       })}
 
@@ -81,13 +83,13 @@ function App() {
     <div className="app">
 
      <div className="title_container">
-       <div><img src={mosque} height={100} width={100} /></div>
+       <div className="image"><img src={mosque} height={100} width={100} /></div>
        <div className="title" >
          <div>Prayer time</div>
          <div >
            <h1 className="date">{date}</h1>
            <h1 className="date">{datehijri}</h1>
-           <h1 className="date">{query}</h1>
+           <h1 className="date">{city}</h1>
          </div>
        </div>
      </div>
@@ -106,28 +108,28 @@ function App() {
 
      <div className="prayer">
        <h1 className="salat">
-         <div>Fajr   : </div>
+         <div className="time1">Fajr   : </div>
          <div className="time1">{fajr}</div>
        </h1>
        <h1 className="salat"> 
-         <div>Sunset : </div>
-         <div className="time2">{sunrise}</div>
+         <div className="time1">Sunset : </div>
+         <div className="time1">{sunrise}</div>
        </h1>
        <h1 className="salat">
-         <div>Dhur   : </div>
-         <div className="time3">{dhur}</div>
+         <div className="time1">Dhur   : </div>
+         <div className="time1">{dhur}</div>
        </h1>
        <h1 className="salat">
-         <div>Asr    : </div>
+         <div className="time1">Asr    : </div>
          <div className="time1">{asr}</div>
        </h1>
        <h1 className="salat">
-         <div>Maghrib: </div>
-         <div className="time4">{maghrib}</div>
+         <div className="time1">Maghrib: </div>
+         <div className="time1">{maghrib}</div>
        </h1>
        <h1 className="salat">
-         <div>Isha   : </div>
-         <div className="time3">{isha}</div>
+         <div className="time1">Isha   : </div>
+         <div className="time1">{isha}</div>
        </h1>
      </div>
           
