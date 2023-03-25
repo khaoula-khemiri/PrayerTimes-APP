@@ -1,0 +1,77 @@
+@import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+.about {
+    display: flex;
+
+    @include mobile1 {
+        flex-direction: column;
+    }
+
+    .aboutLeft {
+        flex: 1;
+
+        img {
+            height: 90%;
+            width: 80%;
+
+
+
+        }
+
+        @include mobile1 {
+            display: none;
+        }
+    }
+
+    .aboutRight {
+        flex: 1;
+        padding-top: 30px;
+        gap: 30px;
+        font-family: 'Alkatra', cursive;
+
+        @include mobile1 {
+            padding: 20px;
+        }
+
+        .aboutRightText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                color: rgb(197, 210, 212)
+            }
+
+            p {
+                font-size: 25px;
+
+                @include mobile1 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .icon {
+                color: #abb3b5;
+                cursor: pointer;
+
+                &:hover {
+                    scale: 1.15;
+                }
+            }
+        }
+    }
+
+
+}

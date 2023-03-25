@@ -1,0 +1,24 @@
+$width1: 970px;
+$width2: 500px;
+
+@mixin mobile {
+    @media (max-width: #{$width2}) {
+        @content
+    }
+}
+
+;
+
+@mixin mobile1 {
+    @media (max-width: #{$width1}) {
+        @content
+    }
+}
+
+;
+
+@mixin mobile2 {
+    @media (min-width: #{$width1}) {
+        @content
+    }
+}

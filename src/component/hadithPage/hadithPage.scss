@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+@import "../../global.scss";
+
+.hadithPage {
+    height: 100%;
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+
+    @include mobile1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .leftContainer {
+        flex: 1;
+    }
+
+    .rightContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Alkatra', cursive;
+            text-align: center;
+            width: 80%;
+
+            span {
+                color: rgb(32, 82, 119);
+            }
+        }
+
+        .imageContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+
+            img {
+                height: 90%;
+                width: 80%;
+
+
+            }
+        }
+    }
+
+
+}

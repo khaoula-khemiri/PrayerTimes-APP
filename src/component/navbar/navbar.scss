@@ -1,0 +1,63 @@
+@import "../../global.scss";
+
+.logoImg {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.linkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        align-items: center;
+
+        @include mobile {
+            flex-direction: column;
+
+        }
+
+        li {
+            width: 100px;
+
+
+            a {
+                font-size: 18px;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                text-shadow: 2px 2px 5px rgb(5, 5, 5);
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                @include mobile {
+
+                    justify-content: flex-start;
+
+
+                }
+
+                &:hover {
+                    font-weight: 600;
+                    background-color: transparent;
+                }
+            }
+
+            button {
+                border: none;
+                padding: 5px 15px;
+                border-radius: 5px;
+                background-color: #64AF46;
+                color: white;
+            }
+        }
+
+    }
+}

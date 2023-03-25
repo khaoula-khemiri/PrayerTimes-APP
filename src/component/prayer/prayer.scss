@@ -1,0 +1,190 @@
+@import "../../global.scss";
+
+.prayer {
+    background-color: #e9e9ea;
+    width: 50%;
+    border-radius: 10px;
+
+    @include mobile1 {
+        width: 100%;
+
+    }
+
+    .bottom {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        gap: 20px;
+
+        @include mobile {
+            padding: 10px 10px 10px 10px;
+
+        }
+
+        .bottomLeft {
+            flex: 2;
+
+            .search {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                @include mobile {
+                    flex-direction: column;
+
+                }
+
+                .select {
+                    flex: 1;
+                }
+
+
+
+                .date {
+                    font-weight: 700;
+                    padding-bottom: 10px;
+                    flex: 1;
+
+                    span {
+                        color: #64AF46;
+                        padding-left: 5px;
+                    }
+                }
+            }
+
+
+
+
+            .prayerContainer {
+                margin-top: 15px;
+                background-color: white;
+                padding: 10px 15px;
+                border-radius: 5px;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    list-style-type: none;
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+                .prayerTitle {
+                    color: #64AF46;
+                    font-weight: 600;
+                    padding: 0px 15px;
+                }
+
+                .Item {
+                    border: 1px solid grey;
+                    padding: 15px;
+                    border-radius: 10px;
+                    margin: 8px 0px 0px 0px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:hover {
+                        scale: 1.02;
+                        border: 1px solid red;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 4px;
+                    }
+
+
+
+                }
+
+                .select {
+                    border: 2px solid red;
+                }
+            }
+        }
+
+        .bottomRight {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+
+
+            .top {
+                display: flex;
+
+                .topLeft {
+                    flex: 2;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+
+                .topRight {
+                    flex: 5;
+                    color: gray;
+                }
+            }
+
+
+            .SunRiseContainer {
+                background-color: white;
+                padding: 10px;
+                margin-top: 40px;
+                border-radius: 3px;
+                width: 80%;
+
+                .sunrise {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #f9a425;
+                    padding: 10px;
+                    border-radius: 10px;
+                    font-weight: 600;
+
+                    .sunriseTitle {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .circel {
+                            background-color: white;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            align-items: center;
+                            display: flex;
+                            justify-content: center;
+
+                            .center {
+                                background-color: #f9a425;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+
+
+
+                }
+
+
+
+            }
+
+
+            .imgContainer {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    padding: 5px;
+                    width: 70%;
+                    height: 60%;
+                    border-radius: 15px;
+                }
+            }
+
+        }
+    }
+}
