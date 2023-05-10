@@ -9,25 +9,6 @@ ISLAMIC PRAYER TIMES:
 Please don't hesitate to open an issue or pull request. You can also send me a message on [Twitter](https://twitter.com/KhaoulaKhemiri).
 
 
-### prayer times:
-
-![image](https://user-images.githubusercontent.com/99682033/161259194-9dfa06c6-58dc-4d85-b546-7c0d1b7ff039.png)
-
-
-###  Hadith of Prophet Muhammad in arabic laguage:
-
-![image](https://user-images.githubusercontent.com/99682033/161259237-d7a81493-75b8-490b-b5aa-4ba8c8997a07.png)
-
-###  Hadith of Prophet Muhammad in french laguage:
-
-![image](https://user-images.githubusercontent.com/99682033/161259480-bf1048a9-0b41-45bd-9a43-17ceea10807a.png)
-
-
-
-
-
-
-
 
 
 
