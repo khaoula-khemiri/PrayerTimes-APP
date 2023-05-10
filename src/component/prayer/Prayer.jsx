@@ -16,7 +16,7 @@ const Prayer = () => {
     const [contry, setcontry] = useState();
 
     const search = evt => {
-        fetch(`http://api.aladhan.com/v1/timingsByAddress?address=${city}`)
+        fetch(`https://api.aladhan.com/v1/timingsByAddress?address=${city}`)
             .then(res => res.json())
             .then(result => {
 
